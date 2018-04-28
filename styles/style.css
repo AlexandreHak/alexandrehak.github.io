@@ -1,0 +1,375 @@
+@import 'reset.css';
+
+/*
+Colors:
+https://material.io/color/#!/?view.left=0&view.right=0&primary.color=424242&secondary.color=2979FF
+Fonts:
+https://fonts.google.com/selection?selection.family=Fira+Mono:500|Roboto&query=fira+mono
+*/
+
+:root {
+  --primary-color: #424242;
+  --primary-light-color: #6d6d6d;
+  --primary-dark-color: #1b1b1b;
+  --secondary-color: #2979ff;
+  --secondary-light-color: #75a7ff;
+  --secondary-dark-color: #004ecb;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Fira Mono', monospace;
+}
+
+/* Common rules */
+
+body {
+  min-width: 320px;
+  display: grid;
+  grid-template: 100vh / repeat(12, 1fr);
+}
+
+
+body > * {
+  grid-column: span 12;
+}
+
+img {
+  max-width: 100%;
+}
+
+section ul *:hover {
+  transition: all 0.2s ease-out;
+  color: var(--secondary-color);
+}
+
+/* Fonts */
+
+section > ul > li, address > a, nav, p {
+  font-family: var(--primary-font);
+}
+
+h1, h3, .hello > h2, section h2 {
+  font-family: var(--secondary-font);
+}
+
+.hello, section h2, h3, footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, a, .hello > h2, #profile > h2, #profile > section, #contact > h2, footer {
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+nav > a > h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
+.project h2 > a {
+  color: var(--secondary-light-color);
+}
+
+.section__heading__projects {
+  text-decoration: underline;
+}
+
+/* Colors */
+
+footer {
+  background: var(--primary-dark-color);
+}
+
+/* header */
+
+header {
+  background: var(--primary-color);
+}
+
+nav, nav > ul {
+  display: flex;
+}
+
+nav {
+  padding: 1rem 0;
+  background: var(--primary-dark-color);
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  margin-top: 0.5rem;
+}
+
+nav > ul > li > a{
+  padding: 0.5rem;
+}
+
+nav > ul > li:hover a {
+  transition: all 0.3s ease-out;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.hello {
+  height: 88.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Profile */
+
+#profile {
+  background: var(--primary-light-color);
+  display: grid;
+  grid-template: repeat(5, auto) / repeat(12, 1fr);
+}
+
+#profile > * {
+  grid-column: 2 / 12;
+}
+
+section > h2 {
+  padding: 3rem;
+}
+
+.profile__heading {
+  padding: 1rem;
+  border: 1px dashed white;
+  transition: all 0.3s ease-out;  
+}
+
+#profile > section > P {
+  text-align: center;
+  padding: 2rem 0;
+  white-space: pre-wrap;
+}
+
+.text-logo {
+  width: 9rem;
+}
+
+.skills > ul {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section > h3:hover {
+  background: var(--primary-color);
+  border-style: solid;
+}
+
+section > ul > li {
+  margin: 0 1%;
+}
+
+.skills > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.hobbies > ul, .tools > ul {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Projects */
+
+#projects {
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(12, 1fr);
+}
+
+#projects > *:not(h2) {
+  grid-column: 2 / 12;
+}
+
+#projects > h2 {
+  grid-column: span 12;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+
+#projects > h2 {
+  background: var(--secondary-color);
+}
+
+.description > p {
+  padding: 2rem 0;
+}
+
+.description > p > span {
+  font-size: 1.5rem;
+}
+
+.description > ul {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.description > ul > li {
+  font-family: var(--primary-font);
+  margin: 0 1%;
+}
+
+/* Contact */
+
+#contact {
+  background: #306efe linear-gradient(120deg,#30cde2 0,#306efe 100%) no-repeat;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#contact > * {
+  grid-column: 2 / 12;
+}
+
+address {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(12, auto);
+  grid-row-gap: 1rem; 
+}
+
+address > a {
+  padding: 0.3rem 0;
+}
+
+address > a:first-child, address > a:last-child {
+  text-align: center;
+  grid-column: span 12;
+}
+
+address > a:nth-child(n+2):nth-child(-n+4) {
+  grid-column: span 4;
+  text-align: center;
+}
+
+address > a > i {
+  margin: 0 0.5rem;
+}
+
+address > a:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem 0;
+}
+
+/* Media queries */
+
+@media (min-width: 992px) {
+  /* Header */
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  nav > a {
+    grid-column: 2 / 4;
+    justify-self: center;
+    
+  }
+
+  nav > ul {
+    grid-column: 9 / 12;
+    justify-self: center;
+  }
+
+  .hello > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Profile */
+
+  #profile {
+    grid-column-gap: 1rem;
+  }
+
+  #profile > section:nth-child(even) {
+    grid-column: 2 / 7;
+  }
+
+  #profile > section:nth-child(odd) {
+    grid-column: 7 / 12;
+  }
+
+  /* Projects */
+  
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .description {
+    grid-column: 1 / 7;
+  }
+
+  .description > p {
+    margin: auto 0;
+  }
+
+  .container-img {
+    grid-column: 7 / 13;
+  }
+  /* #profile > section {
+    grid-column: span 6;
+  } */
+
+
+
+  /* .skills, .tools {
+    grid-column: 7 / 13;
+  } */
+
+
+  /*
+  identity and hobbies span 1 / 7
+  */
+
+  .text-logo {
+    width: 8rem;
+  }
+}
+
+/*
+[ ] header .hello better background
+[ ] animation profile
+[ ] slider project
+[ ] section separations
+[ ] code validator 
+[ ] SEO
+[ ] hebergement
+*/
