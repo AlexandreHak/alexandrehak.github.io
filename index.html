@@ -12,16 +12,16 @@
 <body>
   <header>
     <nav>
-      <a href=""><h2>Alexandre Hak</h2><span class="text-light">Web developer</span></a>
-      <ul>
+      <a href="" class="fadeInDown animated"><h2>Alexandre Hak</h2><span class="text-light">Web developer</span></a>
+      <ul class="fadeInUp animated">
         <li><a href="#profile">Profile</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="hello">
-      <h1>Alexandre Hak</h1>
-      <h2>Développeur Web</h2>
+      <h1 class="fadeInDown animated">Alexandre Hak</h1>
+      <h2 class="fadeInUp animated">Développeur Web</h2>
     </div>
   </header>
 
@@ -29,7 +29,7 @@
     <h2 class="section__heading">Profile</h2>
     <section class="identity">
       <h3 class="profile__heading">Identity</h3>
-      <p>En formation au développement web à la <a href="http://webacademie.org" target="_blank"><img src="http://webacademie.org/img/logo_webacademie.png" class="text-logo" alt="webacademie logo"></a><br>où la pédagogie par projet stimule mon autonomie et la collaration.
+      <p>En formation au développement web à la <a href="http://webacademie.org" target="_blank"><img src="http://webacademie.org/img/logo_webacademie.png" class="text-logo" alt="webacademie logo"></a><br>où la pédagogie par projet stimule mon autonomie et la collaboration.
       Je suis <em>organisé</em>, <em>autonome</em> et <em>ouvert d'esprit</em>.
       Envie d'apprendre et de m'améliorer continuellement.
       </p>
@@ -41,15 +41,16 @@
         <li><i class="fab fa-html5 fa-2x" title="HTML5"></i></li>
         <li><i class="fab fa-css3-alt fa-2x" title="CSS3"></i></li>
         <li><a href="http://eloquentjavascript.net" target="_blank"><i class="fab fa-js fa-2x" title="ES6"></i></a></li>
-        <li>jQuery</i></li>
+        <li class="element--vertial-align-center">jQuery</i></li>
+        <li><a href="https://nodejs.org/" target="_blank"><i class="fab fa-node fa-2x" title="Node.js"></i></a></li>
         <li><i class="fab fa-php fa-2x" title="PHP 7.2"></i></li>
         <li><i class="fab fa-laravel fa-2x" title="Laravel 5.6"></i></li>
-        <li>SQL</li>
+        <li class="element--vertial-align-center">SQL</li>
         <li><i class="fas fa-database fa-2x" title="MySql"></i></li>
         <li><i class="fab fa-git fa-2x" title="Git"></i></li>
-        <li><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank"><i class="fas fa-code-branch fa-2x" title="Git branching model by Vincent Driessen"></i></a></li>
         <li><a href="https://github.com/AlexandreHak" target="_blank"><i class="fab fa-github fa-2x" title="GitHub"></i></a></li>
-        <li><i class="fas fa-terminal fa-2x" title="Unix command line"></i></li>
+        <li><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank"><i class="fas fa-code-branch fa-2x" title="Git branching model by Vincent Driessen"></i></a></li>
+        <li><a href="https://www.learnenough.com/command-line-tutorial" target="_blank"><i class="fas fa-terminal fa-2x" title="Unix command line"></i></a></li>
       </ul>
       <div>
         <a href="https://www.codewars.com/users/again" target="_blank"><img src="https://www.codewars.com/users/again/badges/large" alt="codewars badge"></a>
@@ -60,8 +61,10 @@
         <h3 class="profile__heading">Hobbies</h3>
         <ul>
           <li><i class="fas fa-code fa-2x" title="learning to code"></i></li>
+          <li><i class="fab fa-reddit fa-2x" title="reading news"></i></li>
           <li><i class="fas fa-futbol fa-2x" title="sports"></i></li>
           <li><i class="fas fa-film fa-2x" title="watching movies / series"></i></li>
+          <li><i class="fas fa-gamepad fa-2x" title="strategy, multiplayer games..."></i></li>
         </ul>
     </section>
 
@@ -71,64 +74,70 @@
         <li><i class="fab fa-github fa-2x" title="GitHub"></i></li>
         <li><i class="fab fa-trello fa-2x" title="Trello"></i></li>
         <li><i class="fab fa-slack fa-2x" title="Slack"></i></li>
-        <li><a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a></li>
+        <li class="element--vertial-align-center"><a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a></li>
         <li><i class="fab fa-windows fa-2x" title="Windows 10"></i></li>
-        <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+        <li class="element--vertial-align-center"><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
       </ul>
     </section>
   </section>
 
   <section id="projects">
-    <h2 class="section__heading__projects">Projects</h2>
+    <h2 class="section__heading--underline">Projects</h2>
 
     <section class="project">
       <div class="description">
         <h2 class="font-effect-outline"><a href="https://github.com" target="_blank">Twitter Clone</a></h2>
-        <p><span>2018 - </span>Projet fait en groupe avec mini-framework MVC home-made durant 1 mois.
+        <p><span>2018 - </span>Fait en groupe avec mini-framework MVC home-made durant 1 mois.
           Le but étant de reproduire un maximum de fonctionnalitées et de nous mettre au travail en équipe.
           Je décide de le refaire seul pour le "finir" et consolider les bases acquis avec Laravel.</p>
         <ul>
-          <li><svg class="d-block" width="24" height="24" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></li>
+          <li><svg class="d-block" width="28" height="28" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></li>
           <li><i class="fab fa-php fa-2x"></i></li>
           <li><i class="fab fa-laravel fa-2x"></i></li>
-          <li>SQL / MySQL</li>
+          <li class="element--vertial-align-center">SQL / MySQL</li>
         </ul>
       </div>
       <div class="container-img">
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="twitter clone image">
+        <a href="#">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="twitter clone image" class="project-img-1">
+        </a>
       </div>
     </section>
 
-    <section class="project">
+    <section class="project featured">
       <div class="description">
         <h2 class="font-effect-outline"><a href="#">My Cinema - Communautaire</a></h2>
         <p><span>2018 - </span>Projet classique: Créer un site communautaire qui permet aux utilisateurs de CRUD leurs listes de films.
-          Ils ont aussi la possibilité de contribuer au site en ajouter des films, d'échanger entre eux...
-          Ce projet m'a permis de m'initier à Laravel.</p>
+          Ils ont aussi la possibilité de contribuer au site en ajoutant des films, d'échanger entre eux...
+          Ce projet m'a permis de m'initier à Laravel (2 semaines).</p>
         <ul>
-          <li><svg class="d-block" width="24" height="24" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></li>
+          <li><svg class="d-block" width="28" height="28" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg></li>
           <li><i class="fab fa-php fa-2x"></i></li>
           <li><i class="fab fa-laravel fa-2x"></i></li>
-          <li>SQL / MySQL</li>          
+          <li class="element--vertial-align-center">SQL / MySQL</li>          
         </ul>
       </div>
       <div class="container-img">
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="twitter clone image">      
+        <a href="#">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="twitter clone image">      
+        </a>
       </div>
       </section>
 
     <section class="project">
       <div class="description">
         <h2 class="font-effect-outline"><a href="#" target="_blank">Connect 4</a></h2>
-        <p><span>2018 - </span>Créer un plugin jQuery puissance 4 avec personnalisations: nombres de colonnes, lignes, couleurs.
-          Fonctionnalités: Scoreboard, jouer contre l'IA... 
+        <p><span>2018 - </span>Créer un plugin jQuery puissance 4 avec personnalisations (2 semaines): nombres de colonnes, lignes, couleurs.
+          Fonctionnalités: Scoreboard, jouer contre l'IA...
         </p>
         <ul>
           <li><i class="fab fa-js fa-2x"></i></li>
         </ul>
       </div>
       <div class="container-img">
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="connect 4 image">      
+        <a href="#">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1950&q=80" alt="connect 4 image">      
+        </a>
       </div>
       </section>
   </section>
@@ -138,7 +147,7 @@
     <address>
       <a href="http://cv_ambition_feminine.wac.epitech.eu/A_Propos.html" target="_blank"><i class="fas fa-info-circle fa-2x"></i>Plus d'information sur le contrat de professionnalisation et la formation</a>
       <a href="https://github.com/AlexandreHak" target="_blank"><i class="fab fa-github fa-2x"></i>Consulter mon GitHub</a>
-      <a href="https://www.linkedin.com/in/alexandre-hak/" target="_blank"><i class="fas fa-user-circle fa-2x"></i>Mon CV</a>
+      <a href="cv-alexandre-hak.pdf" download><i class="fas fa-user-circle fa-2x"></i>Mon CV</a>
       <a href="https://www.linkedin.com/in/alexandre-hak/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>Plus d'information sur moi</a>
       <a href="mailto:hak.alexandre@gmail.com"><i class="fas fa-envelope-square fa-2x"></i>Contactez moi par email</a>
     </address>
